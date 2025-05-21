@@ -21,6 +21,7 @@ public class MqttPublisherService {
         DefaultPahoMessageConverter converter = new DefaultPahoMessageConverter();
         converter.setPayloadAsBytes(true); // 关键配置：强制转换为字节数组
         this.mqttHandler.setConverter(converter);
+        mqttHandler.setDefaultQos(0);
     }
 
     /**
