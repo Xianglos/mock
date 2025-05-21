@@ -1,5 +1,0 @@
-moquette:
-  port: 1883
-  web-socket:
-    enabled: true
-    path: /mqtt
